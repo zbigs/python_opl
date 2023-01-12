@@ -1,5 +1,6 @@
 from calc import math_oper as calc
 
+
 while True:
     print("Dodawanie - 1")
     print("Odejmowanie - 2")
