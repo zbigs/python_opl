@@ -9,8 +9,16 @@ while True:
     oper = input("wybierz dzialanie ")
 
     if oper in ('1', '2', '3', '4'):
-        x = float(input("x="))
-        y = float(input("y="))
+        try:
+            x = float(input("x="))
+        except:
+            print("To nie jest liczba, sprobuj ponownie")
+            continue
+        try:
+            y = float(input("y="))
+        except:
+            print("To nie jest liczba, sprobuj ponownie")
+            continue
         if oper == '1':
             print("wynik x+y=", calc.add(x, y))
         elif oper == '2':
